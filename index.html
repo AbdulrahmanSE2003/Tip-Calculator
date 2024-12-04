@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- *LINK -  Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="main" class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <h2 class="my-5 split mx-auto text-center text-uppercase">Spli <br> tter</h2>
+                <div class="calc bg-white d-flex jus gap-4">
+                    <div class="control d-flex flex-column w-50 col-6">
+                        <div class="bill">
+                            <p class="m-0">Bill</p>
+                            <div class="ip position-relative">
+                                <input type="number" name="bill" id="bill" class="w-100" value="0">
+                                <i class="fas fa-dollar-sign position-absolute"></i>
+                            </div>
+                        </div>
+                        <div class="container-fluid p-0 my-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>Select Tip %</p>
+                                <p id="select" class="select d-none" style="color: #df7d61;">Select a Tip</p>
+                            </div>
+                            <div class="my-3 row justify-content-between discounts p-1">
+                                    <button data-tip="5" class="col-2">5%</button>
+                                    <button data-tip="10" class="col-2">10%</button>
+                                    <button data-tip="15" class="col-2">15%</button>
+                                    <button data-tip="25" class="col-2">25%</button>
+                                    <button data-tip="40" class="col-2">40%</button>
+                                    <button data-tip="50" class="col-2">50%</button>
+                            </div>
+                        </div>
+                        <div class="share">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>Number Of Persons</p>
+                                <p id="zero" class="not-zero d-none">Can't be zero</p>
+                            </div>
+                            <div class="ip position-relative">
+                                <input type="number" name="num" id="numOfPer" value="0">
+                                <i class="fas fa-user position-absolute"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screen col-6 position-relative">
+                        <div class="opt1 my-3 d-flex justify-content-between align-items-center">
+                            <div class="label">
+                                <h5>Tip Amount</h5>
+                                <span>/ Person</span>
+                            </div>
+                            <div class="value">
+                                <p id="tip">$ 0.00</p>
+                            </div>
+                        </div>
+                        <div class="opt2 my-3 d-flex justify-content-between align-items-center">
+                            <div class="label">
+                                <h5>Total</h5>
+                                <span>/ Person</span>
+                            </div>
+                            <div class="value">
+                                <p id="bpp">$ 0.00</p>
+                            </div>
+                        </div>
+                        <button id="reset" class="position-absolute">Reset</button>
+                    </div>
+                </div>
+            </div>
+            <div class="calc-section d-flex justify-content-center">
+                <button id="submit" class="w-75">Submit</button>
+            </div>
+        </div>
+        
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="https://kit.fontawesome.com/9a16a36fbb.js" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
