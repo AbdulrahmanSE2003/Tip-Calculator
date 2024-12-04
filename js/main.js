@@ -13,14 +13,17 @@ function calculateTip(tipPercentage) {
     const numOfPersons = Number(numOfPerInput.value);
     if (numOfPersons === 0) {
         zeroWarning.classList.replace('d-none', 'd-block');
+        numOfPerInput.style.borderColor= "#df7d61";
         return;
     }
     zeroWarning.classList.replace('d-block', 'd-none');
+    numOfPerInput.style.borderColor= "hsl(186, 14%, 43%)";
     const tipAmount = (billVal * tipPercentage) / 100;
     const totalPerPerson = (billVal + tipAmount) / numOfPersons;
     tipResult.textContent = `$${tipAmount.toFixed(2)}`;
     bppResult.textContent = `$${totalPerPerson.toFixed(2)}`;
 }
+
 
 tipButtons.forEach(button => {
     button.addEventListener('click', () => {
